@@ -159,9 +159,6 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
-    <Compile Include="Areas\Admin\Controllers\AlbumsController.cs" />
-    <Compile Include="Areas\Admin\Controllers\TracksController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -185,19 +182,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Areas\Admin\Views\web.config" />
-    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\Admin\Views\Albums\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\Albums\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\Albums\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\Albums\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\Albums\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Tracks\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\Tracks\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\Tracks\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\Tracks\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\Tracks\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -248,7 +232,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -256,16 +239,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Nwd.BackOffice\Nwd.BackOffice.csproj">
-      <Project>{c38e58af-920c-488b-b0a6-420d8b50b060}</Project>
-      <Name>Nwd.BackOffice</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Nwd.FrontOffice\Nwd.FrontOffice.csproj">
-      <Project>{9a01cce5-c016-4e3a-bfcc-1124c6390083}</Project>
-      <Name>Nwd.FrontOffice</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
